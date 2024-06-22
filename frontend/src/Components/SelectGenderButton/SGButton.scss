@@ -1,18 +1,24 @@
-.SelectButton {
+.selectButton {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 10px;
     ul{
         display: inline-block;
+        margin: 0;
         padding: 0;
         text-align: center;
-        .CustomButton {
+        .customButton {
             list-style: none;
-            font-size: 150%;
+            font-size: 1rem;
             font-weight: 600;
-            margin: 0 20px;
-            padding: 10px 20px;
+            margin: 0 5px;
+            padding: 10px;
             cursor: pointer;
             position: relative;
             overflow: hidden;
@@ -22,7 +28,7 @@
             color: #fff;
             border-radius: 25px;
             outline: none;
-            width: 150px;
+            width: 40%;
             transition-duration: 0.5s;
             &:hover {
                 background-color: #f0f0f0;

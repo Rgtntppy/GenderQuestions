@@ -1,0 +1,22 @@
+.questionText {
+    margin-top: 20px;
+    text-align: center;
+    .questionCharacterImg {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+        height: 200px;
+        width: 200px;
+        p {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .characterName {
+        font-size: 2rem;
+        margin: 10px;
+    }
+}

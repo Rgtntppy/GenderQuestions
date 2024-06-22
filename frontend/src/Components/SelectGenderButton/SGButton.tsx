@@ -1,30 +1,27 @@
-import 'src/Component/SelectGenderButton/SGButton.scss';
+import 'src/Components/SelectGenderButton/SGButton.scss';
 import { useCallback, MouseEventHandler } from "react";
-import { SGList } from 'src/Component/SelectGenderButton/SGList';
+import { SGList } from 'src/Components/SelectGenderButton/SGList';
+import { ClickData } from 'src/Components/SelectGenderButton/SGInterface';
 
-interface ClickData {
-    ClickData: (SGItem: string) => void;
-}
-
-const CustomButton: React.FC<ClickData> = ({ ClickData }) => {
+const CustomButton: React.FC<ClickData> = ({ clickData }) => {
     const handleClick: MouseEventHandler<HTMLButtonElement>  = useCallback((event) => {
         const index = parseInt(event.currentTarget.dataset.index || '0',10);
         const SGItem = SGList[index];
-        console.log(SGItem.ButtonTitle+'がクリックされました');
-        ClickData(SGItem.ButtonTitle);
+        console.log(SGItem.selectGender+'がクリックされました');
+        clickData(SGItem.selectGender);
     },[]);
     return (
-        <div className='SelectButton'>
+        <div className='selectButton'>
         <ul>
             {SGList.map((SGItem, index) => (
             <button
             key={ index }
-            className='CustomButton'
+            className='customButton'
             onClick={ handleClick }
             data-index={ index }
             >
-                <li key={ SGItem.ButtonTitle }>
-                    { SGItem.ButtonTitle }
+                <li key={ SGItem.selectGender }>
+                    { SGItem.selectGender }
                 </li>
             </button>
             ))}

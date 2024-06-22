@@ -1,13 +1,15 @@
 import React from 'react';
-import 'src/App.css';
-import GameComponent from 'src/Component/GameComponent';
+import { Route, Routes } from 'react-router-dom';
+import 'src/app.scss';
+import TopPage from 'src/Components/TopPage';
+import GameComponent from 'src/Components/GameComponent';
 
-function App() {
+const App = () => {
   return (
-    <>
-    <h1>OX_GAME</h1>
-    <GameComponent/>
-    </>
+    <Routes>
+      <Route path='/' element={<TopPage/>} />
+      <Route path='/GameComponent' element={<GameComponent/>} />
+    </Routes>
   );
 };
 
