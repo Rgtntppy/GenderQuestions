@@ -1,13 +1,17 @@
 .questionText {
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .questionCharacterImg {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         background-color: aquamarine;
-        height: 200px;
-        width: 200px;
+        height: 50vh;
+        width: 50vw;
         p {
             display: inline-flex;
             align-items: center;
@@ -16,7 +20,13 @@
         }
     }
     .characterName {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(210, 230, 250);
         font-size: 2rem;
         margin: 10px;
+        height: 10vh;
+        width: 50vw;
     }
 }

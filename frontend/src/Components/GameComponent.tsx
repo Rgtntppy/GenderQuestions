@@ -14,8 +14,9 @@ const GameComponent: React.FC = () => {
     const [ showPopup, setShowPopup ] = useState(false);
     const [ isCorrect, setIsCorrect ] = useState(false);
     const [ counter, setCounter ] = useState<number>(1);
+    const [ correctCounter, setCorrectCounter ] = useState<number>(0);
 
-    const questionLimit = 2;
+    const questionLimit = 3;
 
     const pushButtonData = (clickData: string) => {
         setClickData(clickData)
@@ -55,7 +56,7 @@ const GameComponent: React.FC = () => {
             <div className='questionCharacterImg'><p>ここに画像が入ります</p></div>
             <p className='characterName'>{characterItem.name}</p>
         </div>    
-        <SGButton clickData={ pushButtonData }/>
+        <SGButton clickData={ pushButtonData } showPopup={showPopup}/>
         <CheckAnswer
             clickData={clickData}
             characterItem={characterItem}
@@ -63,6 +64,8 @@ const GameComponent: React.FC = () => {
             showPopup={showPopup}
             setShowPopup={setShowPopup}
             isCorrect={isCorrect}
+            correctCounter={correctCounter}
+            setCorrectCounter={setCorrectCounter}
         />
         <ClickCounter counter={counter} questionLimit={questionLimit}/>
         {showPopup && 
@@ -76,6 +79,7 @@ const GameComponent: React.FC = () => {
                 isCorrect={isCorrect}
                 counter={counter}
                 questionLimit={questionLimit}
+                correctCounter={correctCounter}
             />
         }
         </>

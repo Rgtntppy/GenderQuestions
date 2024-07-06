@@ -1,3 +1,4 @@
+import { SetStateAction } from "react";
 import { CharacterData } from "src/Components/CharacterData/characterDataInterface";
 
 export interface PopupProps {
@@ -10,6 +11,7 @@ export interface PopupProps {
     counter: number;
     questionLimit: number;
     nextQuestion: () => void;
+    correctCounter: number;
 }
 
 export interface ClickCounterProps {
@@ -21,7 +23,9 @@ export interface CheckAnswerProps {
     clickData: string;
     characterItem: CharacterData | null;
     showPopup: boolean;
-    setShowPopup: React.Dispatch<React.SetStateAction<boolean>>;
+    setShowPopup: React.Dispatch<SetStateAction<boolean>>;
     isCorrect: boolean;
-    setIsCorrect: React.Dispatch<React.SetStateAction<boolean>>;
+    setIsCorrect: React.Dispatch<SetStateAction<boolean>>;
+    correctCounter: number;
+    setCorrectCounter: React.Dispatch<SetStateAction<number>>;
 }
