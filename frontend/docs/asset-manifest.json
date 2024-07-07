@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.91cfae89.css",
-    "main.js": "/static/js/main.a775336a.js",
-    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
-    "index.html": "/index.html",
-    "main.91cfae89.css.map": "/static/css/main.91cfae89.css.map",
-    "main.a775336a.js.map": "/static/js/main.a775336a.js.map",
-    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/GenderQuestions/frontend/docs/static/css/main.063b905c.css",
+    "main.js": "/GenderQuestions/frontend/docs/static/js/main.3d59dee9.js",
+    "static/js/453.8ab44547.chunk.js": "/GenderQuestions/frontend/docs/static/js/453.8ab44547.chunk.js",
+    "index.html": "/GenderQuestions/frontend/docs/index.html",
+    "main.063b905c.css.map": "/GenderQuestions/frontend/docs/static/css/main.063b905c.css.map",
+    "main.3d59dee9.js.map": "/GenderQuestions/frontend/docs/static/js/main.3d59dee9.js.map",
+    "453.8ab44547.chunk.js.map": "/GenderQuestions/frontend/docs/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91cfae89.css",
-    "static/js/main.a775336a.js"
+    "static/css/main.063b905c.css",
+    "static/js/main.3d59dee9.js"
   ]
 }
