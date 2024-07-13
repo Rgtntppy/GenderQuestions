@@ -25,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile-scss": "node-sass src/styles.scss -o dist"
+    "compile-scss": "node-sass src/styles.scss -o dist",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
