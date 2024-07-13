@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/GenderQuestions/frontend/docs/static/css/main.184b57c9.css",
-    "main.js": "/GenderQuestions/frontend/docs/static/js/main.40e671bc.js",
+    "main.js": "/GenderQuestions/frontend/docs/static/js/main.ba977f7d.js",
     "index.html": "/GenderQuestions/frontend/docs/index.html",
     "main.184b57c9.css.map": "/GenderQuestions/frontend/docs/static/css/main.184b57c9.css.map",
-    "main.40e671bc.js.map": "/GenderQuestions/frontend/docs/static/js/main.40e671bc.js.map"
+    "main.ba977f7d.js.map": "/GenderQuestions/frontend/docs/static/js/main.ba977f7d.js.map"
   },
   "entrypoints": [
     "static/css/main.184b57c9.css",
-    "static/js/main.40e671bc.js"
+    "static/js/main.ba977f7d.js"
   ]
 }
