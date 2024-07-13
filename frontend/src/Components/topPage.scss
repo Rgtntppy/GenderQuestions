@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
+$gradientColorBlue: #1010ff;
+$gradientColorRed : #ff1010;
+$gradientColorPink: #ee10ff;
+
 .topPage {
     position: relative;
     height: 100vh;
@@ -7,10 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .title {
         position: absolute;
         top: 0;
-        background: linear-gradient(to right, #0000ff 20%, #ee00ff, #ff0000 30%, #ff0000 70%, #ee00ff, #0000ff 80%);
+        background: linear-gradient(to right, $gradientColorBlue 20%, $gradientColorPink, $gradientColorRed 30%, $gradientColorRed 70%, $gradientColorPink, $gradientColorBlue 80%);
         background-size: 200% 100%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -28,11 +33,13 @@
         font-size: 10vh;
         font-weight: bold;
     }
+
     .sk_img {
         position: absolute;
         height: 100vh;
         width: 100vw;
         background-color: aqua;
+
         p {
             font-size: 2rem;
             text-align: center;
@@ -44,15 +51,16 @@
             transform: translate(-50%, -50%);
         }
     }
+    
     .startButton {
         position: absolute;
         bottom: 50px;
         display: inline-block;
         padding: 10px 20px;
-        background: linear-gradient(to right, #0000ff 20%, #ee00ff, #ff0000 30%, #ff0000 70%, #ee00ff, #0000ff 80%);
+        background: linear-gradient(to right, $gradientColorRed 20%, $gradientColorPink, $gradientColorBlue 30%, $gradientColorBlue 70%, $gradientColorPink, $gradientColorRed 80%);
         background-size: 200% 100%;
         color: white;
-        animation: reverseGradientAnimation 10s linear infinite;
+        animation: gradientAnimation 10s linear infinite;
         text-decoration: none;
         border: none;
         border-radius: 5px;
