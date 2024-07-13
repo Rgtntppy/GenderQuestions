@@ -17,7 +17,6 @@ const Popup: React.FC<PopupProps> = ({ nextQuestion, isCorrect, counter, questio
       );
   }else{
     return(
-      <>
       <div className="popup">
         <div className="popupContent">
           <p className={ iconClass }>{ isCorrect ? 'O' : 'X' }</p>
@@ -31,7 +30,6 @@ const Popup: React.FC<PopupProps> = ({ nextQuestion, isCorrect, counter, questio
           </Link>
         </div>
       </div>
-      </>
     );
   }
 };
