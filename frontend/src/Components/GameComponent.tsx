@@ -51,38 +51,38 @@ const GameComponent: React.FC = () => {
     }
 
     return (
-        <>
-        <div className='questionText'>
-            <div className='questionCharacterImg'><p>ここに画像が入ります</p></div>
-            <p className='characterName'>{characterItem.name}</p>
-        </div>    
-        <SGButton clickData={ pushButtonData } showPopup={showPopup}/>
-        <CheckAnswer
-            clickData={clickData}
-            characterItem={characterItem}
-            setIsCorrect={setIsCorrect}
-            showPopup={showPopup}
-            setShowPopup={setShowPopup}
-            isCorrect={isCorrect}
-            correctCounter={correctCounter}
-            setCorrectCounter={setCorrectCounter}
-        />
-        <ClickCounter counter={counter} questionLimit={questionLimit}/>
-        {showPopup && 
-            <Popup 
+        <div className='gameScreen'>
+            <div className='questionText'>
+                <div className='questionCharacterImg'><p>ここに画像が入ります</p></div>
+                <p className='characterName'>{characterItem.name}</p>
+            </div>    
+            <SGButton clickData={ pushButtonData } showPopup={showPopup}/>
+            <CheckAnswer
                 clickData={clickData}
                 characterItem={characterItem}
                 setIsCorrect={setIsCorrect}
                 showPopup={showPopup}
                 setShowPopup={setShowPopup}
-                nextQuestion={nextQuestion}
                 isCorrect={isCorrect}
-                counter={counter}
-                questionLimit={questionLimit}
                 correctCounter={correctCounter}
+                setCorrectCounter={setCorrectCounter}
             />
-        }
-        </>
+            <ClickCounter counter={counter} questionLimit={questionLimit}/>
+            {showPopup && 
+                <Popup 
+                    clickData={clickData}
+                    characterItem={characterItem}
+                    setIsCorrect={setIsCorrect}
+                    showPopup={showPopup}
+                    setShowPopup={setShowPopup}
+                    nextQuestion={nextQuestion}
+                    isCorrect={isCorrect}
+                    counter={counter}
+                    questionLimit={questionLimit}
+                    correctCounter={correctCounter}
+                />
+            }
+        </div>
     );
 };
 

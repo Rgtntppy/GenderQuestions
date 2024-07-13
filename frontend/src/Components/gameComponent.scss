@@ -1,32 +1,45 @@
-.questionText {
-    margin-top: 20px;
-    text-align: center;
+.gameScreen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .questionCharacterImg {
-        display: inline-flex;
-        align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+
+    .questionText {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        background-color: aquamarine;
-        height: 50vh;
-        width: 50vw;
-        p {
+        align-items: center;
+        
+        .questionCharacterImg {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            background-color: aquamarine;
+            height: 50vh;
+            width: 50vw;
+
+            p {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
         }
-    }
-    .characterName {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(210, 230, 250);
-        font-size: 2rem;
-        margin: 10px;
-        height: 10vh;
-        width: 50vw;
+
+        .characterName {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(210, 230, 250);
+            font-size: 2rem;
+            margin: 10px;
+            padding: 5px 10px;
+            max-width: 400px;
+            min-height: 10vh;
+            width: 80vw;
+            line-height: 1;
+        }
     }
 }
