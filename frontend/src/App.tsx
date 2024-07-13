@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'src/app.scss';
 import TopPage from 'src/Components/TopPage';
 import GameComponent from 'src/Components/GameComponent';
