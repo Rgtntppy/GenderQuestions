@@ -28,7 +28,7 @@ const ResultComponent: React.FC = () => {
             </div>
             <div className='bottomContent'>
                 <Link to='/'  className='nextButton'>タイトルに戻る</Link>
-           </div>
+            </div>
         </div>
     );
 };
