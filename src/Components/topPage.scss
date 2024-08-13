@@ -54,7 +54,7 @@ $gradientColorPink: #ee10ff;
     
     .startButton {
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         display: inline-block;
         padding: 10px 20px;
         background: linear-gradient(to right, $gradientColorRed 20%, $gradientColorPink, $gradientColorBlue 30%, $gradientColorBlue 70%, $gradientColorPink, $gradientColorRed 80%);

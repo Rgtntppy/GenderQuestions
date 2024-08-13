@@ -3,8 +3,9 @@
     flex-direction: column;
     height: 100vh;
     overflow-y: auto;
+    justify-content: space-between;
 
-    .questionText {
+    .question {
         margin-top: 20px;
         text-align: center;
         display: flex;
@@ -12,20 +13,13 @@
         justify-content: center;
         align-items: center;
         
-        .questionCharacterImg {
+        .characterImg {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: aquamarine;
             height: 50vh;
-            width: 50vw;
-
-            p {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
+            width: auto;
+            object-fit: contain;
         }
 
         .characterName {
@@ -37,9 +31,21 @@
             margin: 10px;
             padding: 5px 10px;
             max-width: 400px;
-            min-height: 10vh;
+            min-width: 150px;
+            max-height: 7vh;
+            min-height: 6vh;
             width: 80vw;
             line-height: 1;
         }
+
+        .questionText {
+            display: inline-flex;
+            margin: 0;
+            padding: 5px 10px;
+            background-color: rgb(210, 230, 250);
+        }
+    }
+    .selectButton {
+        margin-bottom: 10px;
     }
 }
