@@ -65,11 +65,14 @@ const GameComponent: React.FC = () => {
 
     return (
         <div className='gameScreen'>
-            <div className='questionText'>
-                <div className='questionCharacterImg'><p>ここに画像が入ります</p></div>
+            <div className='question'>
+                <img className='characterImg' src={characterItem.img} alt={characterItem.name} />
                 <p className='characterName'>{characterItem.name}</p>
-            </div>    
-            <SGButton clickData={ pushButtonData } showPopup={showPopup}/>
+                <p className='questionText'>{characterItem.questionText}</p>
+            </div>
+            <div className='selectButton'>
+                <SGButton characterItem={ characterItem } clickData={ pushButtonData } showPopup={showPopup}/>
+            </div>
             <CheckAnswer
                 clickData={clickData}
                 characterItem={characterItem}
