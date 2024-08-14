@@ -4,7 +4,11 @@ import { CheckAnswerProps } from 'src/Components/System/systemInterface';
 const CheckAnswer: React.FC<CheckAnswerProps> = ({ clickData, characterItem, setIsCorrect, showPopup, setShowPopup, correctCounter, setCorrectCounter }) => {
     useEffect(() => {
         if (clickData && !showPopup && characterItem) {
-            if (clickData === characterItem.gender) {
+            const isCorrectAnswer = Array(characterItem.answer)
+                ? characterItem.answer.includes(clickData)
+                : clickData === characterItem.answer;
+
+            if (isCorrectAnswer) {
                 console.log('正解！')
                 setShowPopup(true);
                 setIsCorrect(true);
