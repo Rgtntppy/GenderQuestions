@@ -68,7 +68,7 @@ const GameComponent: React.FC = () => {
             <div className='question'>
                 <img className='characterImg' src={characterItem.img} alt={characterItem.name} />
                 <p className='characterName'>{characterItem.name}</p>
-                <p className='questionText'>{characterItem.questionText}</p>
+                <p className='questionText'>Q.&nbsp;{characterItem.questionText}</p>
             </div>
             <div className='selectButton'>
                 <SGButton characterItem={ characterItem } clickData={ pushButtonData } showPopup={showPopup}/>
