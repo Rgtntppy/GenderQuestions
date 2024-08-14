@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/GenderQuestions/docs/static/css/main.184b57c9.css",
-    "main.js": "/GenderQuestions/docs/static/js/main.a32b2771.js",
+    "main.css": "/GenderQuestions/docs/static/css/main.4689f6eb.css",
+    "main.js": "/GenderQuestions/docs/static/js/main.eab72d65.js",
+    "static/media/IMG_5266.jpg": "/GenderQuestions/docs/static/media/IMG_5266.b540b9a82c1330b002d9.jpg",
+    "static/media/chatmini_jpg": "/GenderQuestions/docs/static/media/chatmini_1723616809968043.86939618a36885365592.jpg",
+    "static/media/82781840_p0_master1200.jpg": "/GenderQuestions/docs/static/media/82781840_p0_master1200.740b786f76a94e45700f.jpg",
+    "static/media/cat_kotatsu_neko.png": "/GenderQuestions/docs/static/media/cat_kotatsu_neko.428de434ffe00d3962db.png",
+    "static/media/IMG_5721.jpeg": "/GenderQuestions/docs/static/media/IMG_5721.506782debd6bbeca3cef.jpeg",
+    "static/media/Fsn-L6caYAAnl2g.jpg-small.jpeg": "/GenderQuestions/docs/static/media/Fsn-L6caYAAnl2g.jpg-small.a9bb1722850269b01917.jpeg",
+    "static/media/birdDopant.jpg": "/GenderQuestions/docs/static/media/birdDopant.3b2448f85046c3be3b4a.jpg",
     "index.html": "/GenderQuestions/docs/index.html",
-    "main.184b57c9.css.map": "/GenderQuestions/docs/static/css/main.184b57c9.css.map",
-    "main.a32b2771.js.map": "/GenderQuestions/docs/static/js/main.a32b2771.js.map"
+    "main.4689f6eb.css.map": "/GenderQuestions/docs/static/css/main.4689f6eb.css.map",
+    "main.eab72d65.js.map": "/GenderQuestions/docs/static/js/main.eab72d65.js.map"
   },
   "entrypoints": [
-    "static/css/main.184b57c9.css",
-    "static/js/main.a32b2771.js"
+    "static/css/main.4689f6eb.css",
+    "static/js/main.eab72d65.js"
   ]
 }
