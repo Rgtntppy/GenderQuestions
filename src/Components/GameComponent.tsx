@@ -24,7 +24,7 @@ const GameComponent: React.FC = () => {
     const [ counter, setCounter ] = useState<number>(1);
     const [ correctCounter, setCorrectCounter ] = useState<number>(0);
 
-    const questionLimit = 3;
+    const questionLimit = 5;
 
     const pushButtonData = (clickData: string) => {
         setClickData(clickData)
@@ -70,9 +70,7 @@ const GameComponent: React.FC = () => {
                 <p className='characterName'>{characterItem.name}</p>
                 <p className='questionText'>Q.&nbsp;{characterItem.questionText}</p>
             </div>
-            <div className='selectButton'>
-                <SGButton characterItem={ characterItem } clickData={ pushButtonData } showPopup={showPopup}/>
-            </div>
+            <SGButton characterItem={ characterItem } clickData={ pushButtonData } showPopup={showPopup}/>
             <CheckAnswer
                 clickData={clickData}
                 characterItem={characterItem}
@@ -82,6 +80,8 @@ const GameComponent: React.FC = () => {
                 isCorrect={isCorrect}
                 correctCounter={correctCounter}
                 setCorrectCounter={setCorrectCounter}
+                selects={characterItem.selects}
+                answerKey={characterItem.answerKey}
             />
             <ClickCounter counter={counter} questionLimit={questionLimit}/>
             {showPopup && 
