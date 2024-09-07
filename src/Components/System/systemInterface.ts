@@ -28,4 +28,6 @@ export interface CheckAnswerProps {
     setIsCorrect: React.Dispatch<SetStateAction<boolean>>;
     correctCounter: number;
     setCorrectCounter: React.Dispatch<SetStateAction<number>>;
+    selects: CharacterData[ 'selects' ];
+    answerKey:string | string[];
 }
