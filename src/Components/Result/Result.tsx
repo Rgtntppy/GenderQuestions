@@ -12,8 +12,8 @@ const ResultComponent: React.FC = () => {
     return (
         <div className='resultsScreen'>
             <div className='resultsData'>
-                <p className='accuracyRate'>正解率: {formattedAccuracy}%</p>
-                <p className='totalCorrect'>正回数: {correctCounter} / {questionLimit}</p>
+                <p className='accuracyRate'>正解率 {formattedAccuracy}%</p>
+                <p className='totalCorrect'>正回数 {correctCounter} / {questionLimit}</p>
             </div>
             <div className='resultsText'>
                 {Math.floor(accuracy) < 35 ? (

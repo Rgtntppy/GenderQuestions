@@ -10,6 +10,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
 
         .accuracyRate {
             font-size: 10vh;
@@ -23,7 +24,7 @@
     }
 
     .resultsText {
-        background-color: rgb(245, 245, 185);
+        background-color: rgb(250, 250, 200);
         padding: 30px 40px;
         font-size: 5vh;
         font-weight: 450;
