@@ -11,44 +11,63 @@ $gradientColorPink: #ee10ff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 
-    .title {
-        position: absolute;
-        top: 0;
-        background: linear-gradient(to right, $gradientColorBlue 20%, $gradientColorPink, $gradientColorRed 30%, $gradientColorRed 70%, $gradientColorPink, $gradientColorBlue 80%);
-        background-size: 200% 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
-        animation: gradientAnimation 10s linear infinite;
-        font-size: 7vh;
-        z-index: 10;
-        text-transform: capitalize;
+    .titleContainer{
+        position: relative;
+        background-color: #abe471;
+        padding: 10px 20px;
         text-align: center;
-        font-family: "DotGothic16", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 10vh;
-        font-weight: bold;
+        top: -30%;
+        margin-top: 30px;
+        height: auto;
+        z-index: 5;
+
+        .title {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to right, $gradientColorBlue 20%, $gradientColorPink, $gradientColorRed 30%, $gradientColorRed 70%, $gradientColorPink, $gradientColorBlue 80%);
+            background-size: 200% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            animation: gradientAnimation 10s linear infinite;
+            font-size: 7vh;
+            z-index: 10;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: "DotGothic16", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+            line-height: 4rem;
+        }
     }
 
     .sk_img {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
         width: 100vw;
-        background-color: aqua;
-
-        p {
-            font-size: 2rem;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        object-fit: cover;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        img {
+            max-height: 100vh;
         }
     }
     
