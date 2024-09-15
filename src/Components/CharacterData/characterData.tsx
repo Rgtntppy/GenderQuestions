@@ -51,11 +51,11 @@ const characterDataList:CharacterData[] = [
         gender: '不明',
         img: images('./birdDopant.jpg'),
         questionText: 'バード・ドーパントの性別は？',
-        answerKey: 'select2',
+        answerKey: 'select4',
         selects:{
             select1: '男',
             select2: '女',
-            select3: '化物',
+            select3: '怪人',
             select4: '不明',
         },
     },{
@@ -74,7 +74,7 @@ const characterDataList:CharacterData[] = [
         name: '孔雀(クジャク)',
         gender: '雄',
         img: images('./02e195a89e8ad1d42aecfe3dd63f231f_t.jpeg'),
-        questionText: '写真の孔雀(クジャク)は雄雌どちらでしょうか？',
+        questionText: '画像の孔雀(クジャク)の性別は何でしょう？',
         answerKey: 'select1',
         selects:{
             select1: '雄(オス)',
@@ -86,7 +86,7 @@ const characterDataList:CharacterData[] = [
         name: '孔雀(クジャク)',
         gender: '雌',
         img: images('./Unknown.jpeg'),
-        questionText: '写真の孔雀(クジャク)は雄雌どちらでしょうか？',
+        questionText: '画像の孔雀(クジャク)の性別は何でしょう？',
         answerKey: 'select2',
         selects:{
             select1: '雄(オス)',
