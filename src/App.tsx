@@ -7,13 +7,13 @@ import ResultComponent from 'src/Components/Result/Result';
 
 const App = () => {
   return (
-      <Router basename='/GenderQuestions/docs'>
-        <Routes>
-          <Route path='/' element={<TopPage />} />
-          <Route path='/GameComponent' element={<GameComponent />} />
-          <Route path='/Result/Result' element={<ResultComponent />} />
-        </Routes>
-      </Router>
+    <Router basename='/GenderQuestions/docs'>
+      <Routes>
+        <Route path='/' element={<TopPage />} />
+        <Route path='/GameComponent' element={<GameComponent />} />
+        <Route path='/Result/Result' element={<ResultComponent />} />
+      </Routes>
+    </Router>
   );
 };
 
