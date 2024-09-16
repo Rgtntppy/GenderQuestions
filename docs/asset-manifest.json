@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GenderQuestions/docs/static/css/main.465a4fe2.css",
+    "main.css": "/GenderQuestions/docs/static/css/main.2987172f.css",
     "main.js": "/GenderQuestions/docs/static/js/main.2b2d3c60.js",
     "static/media/IMG_5266.jpg": "/GenderQuestions/docs/static/media/IMG_5266.b540b9a82c1330b002d9.jpg",
     "static/media/chatmini_jpg": "/GenderQuestions/docs/static/media/chatmini_1723616809968043.86939618a36885365592.jpg",
@@ -12,11 +12,11 @@
     "static/media/_t.jpeg": "/GenderQuestions/docs/static/media/02e195a89e8ad1d42aecfe3dd63f231f_t.37b107d4947dcd2d3490.jpeg",
     "static/media/birdDopant.jpg": "/GenderQuestions/docs/static/media/birdDopant.3b2448f85046c3be3b4a.jpg",
     "index.html": "/GenderQuestions/docs/index.html",
-    "main.465a4fe2.css.map": "/GenderQuestions/docs/static/css/main.465a4fe2.css.map",
+    "main.2987172f.css.map": "/GenderQuestions/docs/static/css/main.2987172f.css.map",
     "main.2b2d3c60.js.map": "/GenderQuestions/docs/static/js/main.2b2d3c60.js.map"
   },
   "entrypoints": [
-    "static/css/main.465a4fe2.css",
+    "static/css/main.2987172f.css",
     "static/js/main.2b2d3c60.js"
   ]
 }
