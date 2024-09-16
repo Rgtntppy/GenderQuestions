@@ -7,7 +7,6 @@ import ResultComponent from 'src/Components/Result/Result';
 
 const App = () => {
   return (
-    <div className='gameContainer'>
       <Router basename='/GenderQuestions/docs'>
         <Routes>
           <Route path='/' element={<TopPage />} />
@@ -15,7 +14,6 @@ const App = () => {
           <Route path='/Result/Result' element={<ResultComponent />} />
         </Routes>
       </Router>
-    </div>
   );
 };
 

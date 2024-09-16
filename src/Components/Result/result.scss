@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 90vh;
 
     .resultsData{
         display: flex;
@@ -15,17 +15,20 @@
         .accuracyRate {
             font-size: 10vh;
             font-weight: 500;
+            margin: 30px;
+            padding: 10px 20px;
+
         }
 
         .totalCorrect {
             font-size: 5vh;
-            margin-top: 0;
+            margin: 0;
         }
     }
 
     .resultsText {
         background-color: rgb(250, 250, 200);
-        padding: 30px 40px;
+        padding: 20px 30px;
         font-size: 5vh;
         font-weight: 450;
     }
