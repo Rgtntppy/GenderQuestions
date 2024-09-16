@@ -18,6 +18,10 @@ $gradientColorPink: #ee10ff;
     background-repeat: no-repeat;
     overflow: hidden;
 
+    @media (min-width: 481px){
+        height: 100vh;
+    }
+
     .titleContainer{
         position: relative;
         background-color: #abe471;

@@ -5,6 +5,10 @@
     overflow-y: auto;
     justify-content: space-between;
 
+    @media (min-width: 481px){
+        height: 100vh;
+    }
+
     .question {
         margin-top: 20px;
         text-align: center;
