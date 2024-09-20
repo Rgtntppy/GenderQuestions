@@ -1,48 +1,36 @@
-.selectTable {
-    display: table;
-    border-collapse: collapse;
+.selectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 10px;
     margin: 0 auto;
-    width: 100%;
 
-    tbody {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-    }
-
-    td {
-        padding: 5px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        width: 100%;
+    @media (min-width: 481px){
+        margin: 40px;
     }
 
     .customButton {
-        flex: none;
-        flex-grow: 1;
-        flex-shrink: 0;
-        // font-size: clamp(12px, 2vw, 24px);
         font-weight: 600;
         margin: 5px;
         padding: 10px;
         cursor: pointer;
         position: relative;
-        overflow: hidden;
-        text-decoration: none;
         background: rgb(130, 130, 130);
         color: #fff;
         border-radius: 25px;
         outline: none;
-        height: 50px;
         width: 100px;
+        height: 50px;
         transition-duration: 0.5s;
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-self: center;
+        align-self: center;
+        overflow: hidden;
 
         &:hover {
             background-color: #f0f0f0;
@@ -54,8 +42,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 0;
-            left: 0;
+            box-sizing: border-box;
             background: radial-gradient(circle, rgb(0, 255, 0) 10%, transparent 10%) no-repeat 50%;
             transform: scale(10, 10);
             opacity: 0;
@@ -67,13 +54,20 @@
             transition: 0s;
             opacity: 0.3;
         }
-    }
-}
 
-@media(min-width: 420px){
-    .selectTable {
-        tbody {
-            flex-wrap: nowrap;
+        &:nth-child(odd) {
+            justify-self: end;
+        }
+
+        &:nth-child(even) {
+            justify-self: start;
+        }
+
+        @media (min-width: 481px){
+            width: 150px;
+            height: 60px;
+            padding: 20px 30px;
+            margin: 10px;
         }
     }
 }

@@ -21,7 +21,7 @@ const CustomButton: React.FC<ClickData> = ({ characterItem, clickData, showPopup
                     fontSize = 10;
                 }
 
-                button.setAttribute('style', `font-Size: ${fontSize}px !important;`);
+                button.style.fontSize = `${fontSize}px`;
             }
         });
     }, [characterItem]);
@@ -33,34 +33,25 @@ const CustomButton: React.FC<ClickData> = ({ characterItem, clickData, showPopup
     },[]);
     
     return (
-        <table className='selectTable'>
-            <tbody>
-                {[0, 1].map(rowIndex => (
-                    <tr key={rowIndex}>
-                        {[0, 1].map((colIndex, index) => {
-                            // インデックスに対応する selectキーを動的に作成
-                            const selectKeyIndex = rowIndex + colIndex * 2 +1;
-                            const selectKey = `select${selectKeyIndex}` as keyof typeof characterItem.selects;
-                            const selectButton = characterItem.selects[selectKey];
+        <div className='selectGrid'>
+            {[0, 1, 2, 3].map(index => {
+                const selectKey = `select${index + 1}` as keyof typeof characterItem.selects;
+                const selectButton = characterItem.selects[selectKey];
 
-                            return (
-                                <td key={colIndex}>
-                                    <button
-                                        className='customButton'
-                                        onClick={handleClick}
-                                        data-select={selectButton}
-                                        disabled={showPopup}
-                                        ref={(el) => buttonRefs.current[rowIndex * 2 + colIndex] = el}
-                                    >
-                                        {selectButton}
-                                    </button>
-                                </td>
-                            );
-                        })}
-                    </tr>
-                ))}
-            </tbody>
-        </table>
+                return (
+                    <button
+                        className='customButton'
+                        key={index}
+                        onClick={handleClick}
+                        data-select={selectButton}
+                        disabled={showPopup}
+                        ref={(el) => buttonRefs.current[index] = el}
+                    >
+                        {selectButton}
+                    </button>
+                );
+            })}
+        </div>
     );
 };
 
