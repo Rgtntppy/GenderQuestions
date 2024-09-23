@@ -1,4 +1,4 @@
-import { CharacterData, GenderOptions } from 'src/Components/CharacterData/characterDataInterface';
+import { CharacterData } from 'src/Components/CharacterData/characterDataInterface';
 
 declare const require: {
     context: (path: string, deep?: boolean, filter?: RegExp) => {
@@ -95,17 +95,17 @@ const characterDataList:CharacterData[] = [
             select4: '判別不可',
         },
     },{
-        name: 'こたつネコ',
-        gender: '不明',
-        img: images('./cat_kotatsu_neko.png'),
-        questionText: '猫の気持ちを答えなさい',
-        answerKey: 'select2',
-        selects:{
-            select1: 'お腹すいた',
-            select2: '満腹',
-            select3: '遊んで欲しい',
-            select4: '眠い',
-        },
+    name: 'こたつネコ',
+    gender: '不明',
+    img: images('./cat_kotatsu_neko.png'),
+    questionText: '猫の気持ちを答えなさい',
+    answerKey: 'select2',
+    selects:{
+        select1: '空腹',
+        select2: '満腹',
+        select3: '遊んで欲しい',
+        select4: '眠い',
+    },
     },{
         name: '海辺で出会った少女(?)',
         gender: '不明',

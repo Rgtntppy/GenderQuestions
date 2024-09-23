@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { CheckAnswerProps } from 'src/Components/System/systemInterface';
 
-const CheckAnswer: React.FC<CheckAnswerProps> = ({ clickData, characterItem, setIsCorrect, showPopup, setShowPopup, correctCounter, setCorrectCounter, selects, answerKey }) => {
+const CheckAnswer: React.FC<CheckAnswerProps> = ({ clickData, characterItem, setIsCorrect, showPopup, setShowPopup, setCorrectCounter }) => {
     useEffect(() => {
         if (clickData && !showPopup && characterItem) {
             const correctAnswer = characterItem.answerKey;

@@ -1,5 +1,3 @@
-export type GenderOptions = string[]; 
-
 export interface CharacterData {
     name: string;
     gender: string;

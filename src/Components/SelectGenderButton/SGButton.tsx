@@ -9,16 +9,16 @@ const CustomButton: React.FC<ClickData> = ({ characterItem, clickData, showPopup
         buttonRefs.current.forEach(button => {
             if (button) {
                 const textLength = button.innerText.length;
-                let fontSize = 20;
+                let fontSize = 24;
 
                 if (textLength > 3) {
                     fontSize = 18;
                 }
                 if (textLength > 5) {
-                    fontSize = 14;
+                    fontSize = 15;
                 }
                 if (textLength > 7) {
-                    fontSize = 10;
+                    fontSize = 12;
                 }
 
                 button.style.fontSize = `${fontSize}px`;
