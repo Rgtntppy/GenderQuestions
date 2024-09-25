@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import 'src/app.scss';
 import TopPage from 'src/Components/TopPage';
 import GameComponent from 'src/Components/GameComponent';
@@ -12,6 +12,7 @@ const App = () => {
         <Route path='/' element={<TopPage />} />
         <Route path='/GameComponent' element={<GameComponent />} />
         <Route path='/Result/Result' element={<ResultComponent />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
     </Router>
   );
