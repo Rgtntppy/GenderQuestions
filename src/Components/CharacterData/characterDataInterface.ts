@@ -4,6 +4,7 @@ export interface CharacterData {
     img: string;
     questionText: string;
     answerKey: string | string[];
+    explanation: string,
     selects: {
         select1: string;
         select2: string;
