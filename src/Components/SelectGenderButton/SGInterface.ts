@@ -1,4 +1,4 @@
-import { CharacterData } from 'src/Components/CharacterData/characterDataInterface';
+import { CharacterData } from 'Components/CharacterData/characterDataInterface';
 
 export interface ClickData {
     characterItem: CharacterData;

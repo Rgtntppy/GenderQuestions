@@ -1,11 +1,11 @@
-import 'src/Components/gameComponent.scss';
+import 'Components/gameComponent.scss';
 import React, { useState, useEffect } from 'react';
-import { CharacterData } from 'src/Components/CharacterData/characterDataInterface';
-import characterDataList from 'src/Components/CharacterData/characterData';
-import SGButton from 'src/Components/SelectGenderButton/SGButton';
-import CheckAnswer from 'src/Components/System/CheckAnswer';
-import ClickCounter from 'src/Components/System/ClickCounter';
-import Popup from 'src/Components/System/Popup';
+import { CharacterData } from 'Components/CharacterData/characterDataInterface';
+import characterDataList from 'Components/CharacterData/characterData';
+import SGButton from 'Components/SelectGenderButton/SGButton';
+import CheckAnswer from 'Components/System/CheckAnswer';
+import ClickCounter from 'Components/System/ClickCounter';
+import Popup from 'Components/System/Popup/Popup';
 
 const shuffleArray = (array: CharacterData[]) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -96,6 +96,8 @@ const GameComponent: React.FC = () => {
                     counter={counter}
                     questionLimit={questionLimit}
                     correctCounter={correctCounter}
+                    answerKey={characterItem.answerKey}
+                    explanation={characterItem.explanation}
                 />
             }
         </div>

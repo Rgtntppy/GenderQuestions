@@ -1,5 +1,5 @@
-import 'src/Components/Result/result.scss';
-import { Result } from "src/Components/Result/resultInterface";
+import 'Components/Result/result.scss';
+import { Result } from "Components/Result/resultInterface";
 import { Link, useLocation } from "react-router-dom";
 
 const ResultComponent: React.FC = () => {

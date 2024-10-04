@@ -1,6 +1,6 @@
-import 'src/Components/SelectGenderButton/SGButton.scss';
+import 'Components/SelectGenderButton/SGButton.scss';
 import { useEffect, useCallback, useRef, MouseEventHandler } from "react";
-import { ClickData } from 'src/Components/SelectGenderButton/SGInterface';
+import { ClickData } from 'Components/SelectGenderButton/SGInterface';
 
 const CustomButton: React.FC<ClickData> = ({ characterItem, clickData, showPopup }) => {
     const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);

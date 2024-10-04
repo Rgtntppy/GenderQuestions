@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { CheckAnswerProps } from 'src/Components/System/systemInterface';
+import { CheckAnswerProps } from 'Components/System/systemInterface';
 
 const CheckAnswer: React.FC<CheckAnswerProps> = ({ clickData, characterItem, setIsCorrect, showPopup, setShowPopup, setCorrectCounter }) => {
     useEffect(() => {

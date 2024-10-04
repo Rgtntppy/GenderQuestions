@@ -1,4 +1,5 @@
-import { ClickCounterProps } from 'src/Components/System/systemInterface';
+import 'Components/System/system.scss';
+import { ClickCounterProps } from 'Components/System/systemInterface';
 
 const ClickCounter: React.FC<ClickCounterProps> = ({ counter, questionLimit }) => {
     return (
