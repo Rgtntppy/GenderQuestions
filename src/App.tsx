@@ -4,7 +4,6 @@ import 'app.scss';
 import TopPage from 'Components/TopPage';
 import GameComponent from 'Components/GameComponent';
 import ResultComponent from 'Components/Result/Result';
-import NotFoundRedirect from 'Components/System/NotFoundRedirect';
 
 const App = () => {
   return (
@@ -13,7 +12,7 @@ const App = () => {
         <Route path='/' element={<TopPage />} />
         <Route path='/GameComponent' element={<GameComponent />} />
         <Route path='/Result/Result' element={<ResultComponent />} />
-        <Route path='*' element={<NotFoundRedirect />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
     </Router>
   );
