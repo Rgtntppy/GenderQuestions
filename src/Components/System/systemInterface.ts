@@ -1,4 +1,4 @@
-import { SetStateAction } from "react";
+import { SetStateAction, ReactNode } from "react";
 import { CharacterData } from "Components/CharacterData/characterDataInterface";
 
 export interface ClickCounterProps {
@@ -17,4 +17,12 @@ export interface CheckAnswerProps {
     setCorrectCounter: React.Dispatch<SetStateAction<number>>;
     selects: CharacterData[ 'selects' ];
     answerKey:string | string[];
+}
+
+export interface ErrorBoundaryProps {
+    children: ReactNode;
+}
+
+export interface ErrorBoundaryState {
+    hasError: boolean;
 }
